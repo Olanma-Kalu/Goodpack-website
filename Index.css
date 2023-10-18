@@ -5,12 +5,127 @@ body {    padding:0px;
     overflow-x: hidden;
 }
 
-.header {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.navbar2 {
+    display: flex;
+    background-color: #FFF;
+    position: sticky;
+    top: 0;
+    /* position: fixed; */
+    width: 100%;
+    /* margin-top: 4rem; */
+    height: 5rem;
+}
+.navbar2 img {
+    width: 100%;
+    height: 38px;
+    padding-left: 20px;
+    margin-top: 1rem;
+
+}
+
+
+
+.navbar1-links {
+    background-color: #57b046;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    padding-right: 50px;
+}
+
+.navbar1-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-family: Arial;
+}
+
+.navbar1-links a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.company {
+    font-family: Arial;
+    cursor: pointer;
+    margin-left: 17rem;
+    font-weight: bold;
+    color: rgb(145, 143, 143);
+    /* margin-top: 2rem; */
+
+}
+.company:hover {
+    color: #23aa48;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    
+  }
+  .drop-down-category{
+    display: none;
+    position: absolute;
+    height: 8rem;
+    /* padding-bottom: 9rem; */
+  }
+
+  .next {
+    margin-left: 4rem;
+   font-weight: bold;
+  }
+  li:hover {
+    color: #23aa48;
+  }
+ 
+  
+  .drop-down:hover .drop-down-category{
+    display: block;
+    list-style: none;
+   background-color:rgb(245, 244, 244);
+   margin-left: 15rem;
+   
+  }
+  .drop-down a {
+    text-decoration: none;
+    line-height: 3rem;
+    display: flex;
+    color: #444343;
+    font-family: Arial;
+    width: 12rem;
+  }
+
+  .drop-down-category  a:hover {
+    color: #444343;
+    background-color: rgb(211, 211, 211)
+  }
+
+  li {
+    margin-top: 2rem;
+    cursor: pointer;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgb(145, 143, 143);
+  }
+
+
+/* .header {
     background-color: #57b046;
     height: 2.5rem;
     overflow: hidden;
-}
-.cusportal {
+} */
+/* .cusportal {
      cursor: pointer;
     color: white;
     font-family: Arial;
@@ -19,30 +134,31 @@ body {    padding:0px;
     margin-right: 4rem;
     word-spacing: 2px;
     text-align: right;
-} 
+}  */
 
-.goodpacklogo {
-    width: 14rem;
+/* .cusportal:hover {
+   text-decoration: underline;
+} */
+
+/* .goodpacklogo {
+    width: 12rem;
+    text-align: center;
     margin-left: 1.3rem;
     margin-top: 2rem;
-    margin-bottom: 1.3em;
     font-style: normal;
-}
- .our-company {
+} */
+ /* .our-company {
     float: right;
     margin-right: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
     color: #A6A6A6;
     font-family: Arial;
     font-weight: bold;
     cursor: pointer;
     font-size: 15px;
     display: flex;
-} 
-.ourcompany:hover {
-    color: #57b046;
-}
-.market {
+}  */
+/* .market {
     margin-left: 1rem;
 }
 .market:hover{
@@ -71,23 +187,29 @@ body {    padding:0px;
 }
 .contact:hover {
     color: #57b046;
-}
-.icon {
+}  */
+/* .icon {
     width: 15px;
     height: 14px;
     margin-top: 2.3%;
     margin-left: 1rem;
-}
-
+} */
+/* .gooddiv {
+    position: sticky;
+    background-color: transparent;
+    background-color: #fff;
+    width: 100%;
+   margin-bottom: -4rem;
+   height: 5rem;
+     top: 0;
+} */
 
 .motherdiv {
     width: 38rem;
     height: 37rem;
     background-color: #044b85;
-    /* overflow: hidden; */
     display: flex;
     background-repeat: no-repeat;
-    
 }
 
 #wrapper {
@@ -96,7 +218,6 @@ body {    padding:0px;
     color: #ffffff;
     margin-top: 75px;
     font-size: 41px;
-    margin-bottom: -4rem;
     justify-content: center;
     padding: 0;
 }
@@ -107,7 +228,7 @@ body {    padding:0px;
     font-family: Arial;
     text-shadow: 2px 2px 4px #000000;
     font-size: 6rem;
-    margin-bottom: -7px;
+    margin-bottom: -2px;
     padding: 0;
     margin-right: 4rem;
 
@@ -128,7 +249,7 @@ body {    padding:0px;
     width: 9.3rem;
     border: none;
     background-color: #23aa48;
-    font-size: 12px;
+    font-size: 14px;
     color: #ffffff;
     font-weight: bold;
     font-family: Arial;
@@ -140,10 +261,14 @@ body {    padding:0px;
     color: black;
     transition: color .1s ease-in-out, background-color .4s ease-in-out;
 }
-
+video {
+    overflow: hidden;
+    height: 37rem;
+}
 .body-container {
     background-color: #eef4f8;
     height: 200rem;
+    margin-top: 5rem;
 }
 
 .man-computer {
@@ -458,6 +583,7 @@ button:hover {
     margin-top: 2rem;
     background-color:  #211f1f;;
     height: 19rem;
+    /* display: flex; */
 }
 
 
@@ -465,11 +591,11 @@ button:hover {
     color: #ccc;
     font-family: Arial;
     cursor: pointer;
-    font-size: 15.5px;
+    font-size: 18px;
     display: inline-block;
     margin-left: 6rem;
-    margin-top: 4rem;
-    font-weight: bold;
+    margin-top: 6rem;
+    line-height: 2rem;
 }
 .text1:hover{
     color: #57b046;
@@ -493,12 +619,15 @@ button:hover {
     color: #ccc;
     font-family: Arial;
     cursor: pointer;
-    font-size: 15.5px;
+    font-size: 18px;
     display: inline-block;
     margin-left: 6rem;
-    font-weight: bold;
-    margin-left: 15rem;
+    margin-bottom: -4rem;
+    line-height: 2rem;
+   
+   
 }
+
 
 .eight-div-text1:hover {
     color: #58b046;
@@ -522,10 +651,11 @@ button:hover {
     padding: 19px;
     font-size: 18px;
     width: auto;
+    padding: -900rem;
     text-align: center;
     text-decoration: unset;
     position: relative;
-    top: -100px;
+    top: -100px; 
 }
 .last-button:hover {
   background-color:  #044b85;
@@ -533,7 +663,8 @@ button:hover {
 
 .ninth-div {
     background-color: #000000;
-    height: 5rem;
+    height: 4.9rem;
+    display: flex;
 }
 
 .last-paragraph {
@@ -542,5 +673,20 @@ button:hover {
     font-size: 14px;
     display: inline-block;
     margin-left: 6rem;
-    margin-top: 2.3rem;
+    margin-top: 1.5rem;
+}
+
+.in {
+    color: #FFF;
+    margin-right: -18rem;
+    margin-left: 30rem;
+    margin-top: 2rem;
+}
+.icons {
+    margin-top: 1.4rem;
+}
+
+.youtube {
+    margin-left: 19rem;
+    color: #FFF;
 }
